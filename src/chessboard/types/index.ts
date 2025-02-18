@@ -14,21 +14,28 @@ export type Piece =
   | "wR"
   | "wQ"
   | "wK"
+  | "wM"
+  | "wO"
+  | "wU"
   | "bP"
   | "bB"
+  | "bM"
   | "bN"
   | "bR"
   | "bQ"
-  | "bK";
+  | "bK"
+  | "bU";
 
 export type BoardPosition = { [square in Square]?: Piece };
 
 export type PromotionPieceOption =
-  | "wQ"
+  | "wO"
+  | "wM"
   | "wR"
   | "wN"
   | "wB"
-  | "bQ"
+  | "bO"
+  | "bM"
   | "bR"
   | "bN"
   | "bB";
