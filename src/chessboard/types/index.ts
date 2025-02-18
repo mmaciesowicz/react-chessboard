@@ -17,6 +17,7 @@ export type Piece =
   | "wM"
   | "wO"
   | "wU"
+  | "bO"
   | "bP"
   | "bB"
   | "bM"

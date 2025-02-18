@@ -25,14 +25,16 @@ export function PromotionOption({ option }: Props) {
 
   const backgroundColor = () => {
     switch (option[1]) {
-      case "Q":
+      case "O":
         return customDarkSquareStyle.backgroundColor;
+      case "M":
+        return customLightSquareStyle.backgroundColor;
       case "R":
         return customLightSquareStyle.backgroundColor;
       case "N":
         return promotionDialogVariant === "default"
-          ? customLightSquareStyle.backgroundColor
-          : customDarkSquareStyle.backgroundColor;
+          ? customDarkSquareStyle.backgroundColor
+          : customLightSquareStyle.backgroundColor;
       case "B":
         return promotionDialogVariant === "default"
           ? customDarkSquareStyle.backgroundColor
