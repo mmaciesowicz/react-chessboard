@@ -172,7 +172,7 @@ function isValidFen(fen: string, boardDimensions: BoardDimensions = { rows: 8, c
 
   // check each section
   for (let i = 0; i < boardDimensions.rows; i++) {
-    if (chunks[i].length !== boardDimensions.columns || chunks[i].search(/[^kqrnbpKQRNBP1]/) !== -1) {
+    if (chunks[i].length !== boardDimensions.columns || chunks[i].search(/[^kqrnmoubpKQRNMOUBP1]/) !== -1) {
       return false;
     }
   }
